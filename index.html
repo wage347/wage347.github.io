@@ -1,0 +1,46 @@
+      <div class="card">
+        <div class="top" style="background:linear-gradient(135deg,#7b93ff,#3f4fbd);"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3.2L6 20l1.5-6.5L3 9l6-1z"/></svg></div>
+        <div class="body">
+          <span class="tag">RPG</span>
+          <h4>World // Zero</h4>
+          <div class="rowstats">
+            <div class="m"><div class="n">276</div><div class="l">Bugs Found</div></div>
+            <div class="m"><div class="n">21</div><div class="l">Exploits Patched</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="top" style="background:linear-gradient(135deg,#59c26a,#276b34);"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 2C8 6 4 10 4 14a8 8 0 0016 0c0-4-4-8-8-12z"/></svg></div>
+        <div class="body">
+          <span class="tag">Survival</span>
+          <h4>Primal Hunt</h4>
+          <div class="rowstats">
+            <div class="m"><div class="n">183</div><div class="l">Bugs Found</div></div>
+            <div class="m"><div class="n">11</div><div class="l">Exploits Patched</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / CTA -->
+  <section id="contact">
+    <div class="footer-cta reveal">
+      <h2>Have a project in mind?</h2>
+      <p>Send over your place and what's on your mind — a launch deadline, a live exploit, or a QA pass you've been putting off.</p>
+      <div class="ctas">
+        <a href="https://discord.gg/E3TzDFTSVW" class="btn primary">Discord</a>
+      </div>
+    </div>
+  </section>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
